@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <img src="How-to-play-Super-Sus.png" style="width:1900px;height:700px;">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Halaman Web Kompleks</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(31, 28, 82);
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+header {
+    background-color:#000000;
+    color: #ffffff;
+    padding: 20px 0;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+.section {
+    padding: 50px 0;
+    text-align: center;
+}
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+}
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+form input, form textarea {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid #ffffff;
+}
+form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+</style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Halaman Web supersus</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#about">Tentang Kami</a></li>
+                    <li><a href="#services">Layanan</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="section">
+        <div class="container">
+            <h2>Selamat Datang Di zellWeb</h2>
+            <p>SUPER SUS</p>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>Tentang Game Super Sus</h2>
+            <p align="justify">Super Sus ialah game pesta yang berlatar tempat di pesawat ruang angkasa.
+                 Terdapat 9 pemain yang menjadi bagian dari kru khusus. 
+                 Setiap anggota kri diharuskan untuk melakukan sederetan tugas pemeliharaan pesawat.
+            </p>
+
+            <p><h2>Cerita Dari game SUper Sus</h2></p>
+            <p align="justify">Game Super Sus merupakan sebuah game yang dibuat mirip dengan game Among Us.
+                 Seperti yang sudah kami sebutkan sebelumnya, game ini menawarkan grafis yang lebih baik dari pada Among Us,
+                  karena hadir dengan grafis 3D. Game ini kemudian semakin meningkat pesat perkembangannya pada awal tahun 2022.
+
+                Banyak yang bilang bahwa game ini adalah game jiplak, karena memiliki konsep yang sama persis dengan Among Us.
+                 Namun, perlu kalian ketahui, meski gameplay yang ada di dalam game dan map terkesan sama, 
+                 tetapi game Super Sus dan Among Us memiliki perbedaan yang cukup signifikan
+                 Selain perbedaan gratis, terdapat juga perbedaan lainnya yaitu role.
+                 Role di Super Sus ada tiga, yaitu Spacecrew, Impostor, dan Neutral, sedangkan Among Us, hanya dua, yaitu Spacecrew dan Impostor saja.
+                 Dari ketiga role Super Sus tadi masih ada pembagian lagi dari masing-masing role.
+                 Pada segi mode, di dalam Super Sus terdapat beberapa mode yang bisa dimainkan, yaitu mode Rank, Casual, dan Custom. Sementara itu Among Us,
+                 hanya terdapat satu mode saja. Tentunya, dengan berbagai variasi tersebut, permainan di Super Sus lebih asyik untuk dimainkan dari pada Among us
+                 Game Super Sus sendiri dibuat oleh developer bernama PIProduction. Developer ini berasal dari negeri China atau Tiogkok. Game ini rilis pada 
+                 tanggal 29 November 2021, yang berarti game ini sudah berjalan hampir satu tahun. Seiring berjalannya waktu, game Super Sus semakin berkembang pesat.
+            </p>
+
+        </div>
+    </section>
+
+    <section id="services" class="section">
+        <div class="container">
+            <h2>Layanan Kami</h2>
+            <ul>
+                <li>Layanan 1</li>
+                <li>Layanan 2</li>
+                <li>Layanan 3</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Hubungi Kami</h2>
+            <form id="contactForm">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Pesan:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit" id="submitBtn">Kirim</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Halaman WEb Kompleks</p>
+            <img src="pembuat-super-sus-3.jpg"> 
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var message = document.getElementById("message").value;
+
+            // Lakukan sesuatu dengan data formulir (misalnya, kirim ke server atau tampilkan pesan sukses)
+            console.log("Nama: " + name + ", Email: " + email + ", Pesan: " + message);
+
+            // Tombol kirim akan berubah menjadi "Mengirim..."
+            document.getElementById("submitBtn").innerText = "Mengirim...";
+
+            // Simulasi pengiriman data dengan setTimeout
+            setTimeout(function() {
+                // Lakukan sesuatu dengan data formulir (misalnya, kirim ke server atau tampilkan pesan sukses)
+                console.log("Nama: " + name + ", Email: " + email + ", Pesan: " + message);
+
+                // Setelah pengiriman data selesai, tombol kirim akan kembali menjadi "Kirim"
+                document.getElementById("submitBtn").innerText = "Kirim";
+
+                // Reset formulir
+                document.getElementById("contactForm").reset();
+            }, 2000); // Contoh pengiriman data dalam 2 detik
+        });
+    </script>
+</body>
+</html>
